@@ -1,0 +1,81 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  position: relative;
+}
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  z-index: 5;
+  transition: all 0.5s;
+  justify-content: flex-start;
+}
+.navbar-img {
+  width: 90px;
+  margin: 0;
+}
+.navbar-smiley {
+  width: 55px;
+  margin-right: 5px;
+}
+.hero-image-container {
+  height: 448px;
+  object-fit: contain;
+  background-position: center 45%;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-shadow {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(14, 24, 34, 0.5),
+    #000000
+  );
+}
+.row {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row::-webkit-scrollbar {
+  display: none;
+}
+.row-poster {
+  object-fit: contain;
+  margin-right: 15px;
+  width: 100%;
+  max-height: 190px;
+  cursor: pointer;
+  transition: transform 450ms;
+}
+.row-poster:hover {
+  transform: scale(1.08);
+}
+
+.mode-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  position: fixed;
+  z-index: 100;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.dark-mode {
+  background-color: black;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
